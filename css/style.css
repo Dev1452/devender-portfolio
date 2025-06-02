@@ -247,19 +247,19 @@
     background-color: var(--white);
 }
 
-.contact-form input{
+.contact-form input, .contact-form textarea{
     background-color: var(--ffffff0d);
     color: var(--white);
 }
 
-.contact-form input:focus{
+.contact-form input:focus, .contact-form textarea:focus{
     background-color: var(--ffffff0d);
     box-shadow: none;
     border: 1px solid var(--white);
     color: var(--white);
 }
 
-.contact-form input::placeholder{
+.contact-form input::placeholder, .contact-form textarea::placeholder{
     color: var(--white);
 }
 
