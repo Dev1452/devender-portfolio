@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --B161717 : #161717;
+    --white: #ffffff;
+    --bfff00: #bfff00;
+    --d98d0ae0: #d98d0ae0;
+    --black: #000000;
+    --ffffff0d: #ffffff0d;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.common{
+    background-color: var(--B161717);
+    padding: 80px 0px;
+}
+
+.common-heading h2{
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--white);
+    position: relative;
+    font-family: "poppins";
+}
+
+.common-heading h2::before{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: var(--bfff00);
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header{
+    padding: 25px 0px 25px 0px;
+    position: relative;
+    z-index: 999;
+    background-color: var(--B161717);
+}
+
+.header .navbar {
+    border: 1px solid var(--white);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.header .navbar .navbar-brand{
+    color: var(--white);
+}
+
+.header .navbar .navbar-collapse .navbar-nav{
+    gap: 32px;
+}
+
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+    color: var(--white);
+}
+.header-offcanvas .offcanvas-body ul li a{
+    color: var(--B161717);
+}
+
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link, .header-offcanvas .offcanvas-body ul li a{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: "poppins";
+}
+
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover, 
+.header-offcanvas .offcanvas-body ul li a:hover{
+    color: var(--bfff00);
+}
+
+.header .navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu{
+    display: none;
+    top: 20px;
+    right: 0px;
+}
+
+.header .navbar .navbar-collapse .navbar-nav .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.header .navbar .navbar-collapse{
+    gap: 80px;
+}
+
+/* Footer Css */
+.footer{
+    border-top: 1px solid var(--white);
+    background-color: var(--black);
+}
+
+.footer-copyright p{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+    position: relative;
+    font-family: "poppins";
+}
+
+/* Home Page CSS */
+.slider-content h1{
+    font-size: 40px;
+    line-height: 46px;
+    color: var(--d98d0ae0);
+}
+
+
+/* About Page Start */
+.sbout-section{
+    background-color: var(--B161717);
+    padding: 80px 0px;
+}
+
+.about-inner-content p{
+    color: var(--white);
+    font-size: 22px;
+    line-height: 32px;
+    font-family: "poppins";
+}
+
+.about-inner-content p span{
+    color: var(--bfff00);
+}
+
+/*! Skill section */
+.skill-img {
+    border: 1px solid var(--bfff00);
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.skill-img:hover {
+    border: 1px solid var(--bfff00);
+    box-shadow: 0 0 20px var(--bfff00);
+    transform: scale(1.03); /* Slight zoom effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-img h3{
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--white);
+}
+
+/* Practice Page Start */
+.practice .nav-tabs{
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.practice .nav-tabs .nav-item .nav-link{
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--white);
+    font-family: "poppins";
+    font-weight: 500;
+}
+
+.practice .nav-tabs .nav-item .nav-link:hover{
+    border-color: var(--bfff00);
+}
+
+.practice .nav-tabs .nav-item .nav-link.active{
+    color: var(--B161717);
+    background-color: var(--white);
+    border-color: var(--bfff00);
+}
+
+.card{
+    border: 1px solid var(--bfff00);
+}
+
+.card-heading h3{
+    color: var(--d98d0ae0);
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "poppins";
+    font-weight: 500;
+}
+
+.view-btn{
+    display: inline-block;
+}
+
+.contact-form .submit{
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.card-btn a, .contact-form .submit{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    gap: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border: 1px solid var(--white);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.card-btn a:hover, .contact-form .submit:hover{
+    background-color: var(--white);
+    color: var(--B161717);
+    border: 1px solid var(--d98d0ae0);
+}
+
+.contact-content h2{
+    font-size: 40px;
+    color: var(--white);
+    line-height: 46px;
+    font-weight: 500;
+}
+
+.contact-social-link a{
+    color: var(--white);
+    border: 1px solid var(--bfff00);
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-social-link a:hover{
+    color: var(--B161717);
+    border: 1px solid var(--bfff00);
+    background-color: var(--white);
+}
+
+.contact-form input{
+    background-color: var(--ffffff0d);
+    color: var(--white);
+}
+
+.contact-form input:focus{
+    background-color: var(--ffffff0d);
+    box-shadow: none;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.contact-form input::placeholder{
+    color: var(--white);
+}
+
+.slider-paragraph p{
+    font-size: 20px;
+    color: var(--white);
+}
+
+/* Text Animation Css */
+.slider-content .animated-text{
+    font-size: 40px;
+    color: var(--white);
+    min-width: 200px;
+}
+
+.slider-content .animated-text span{
+    position: relative;
+}
+
+.slider-content .animated-text span::before{
+    content: 'Devender Jain';
+    color: var(--bfff00);
+    animation: words 20s infinite;
+}
+
+.slider-content .animated-text span::after{
+    position: absolute;
+    content: '';
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 2px solid var(--d98d0ae0);
+    background-color: var(--B161717);
+    right: -8px;
+    animation: cursor .8s infinite, typing 33s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid var(--ffffff0d);
+    }
+}
+
+@keyframes words {
+    0%,33%{
+        content: "Devender Jain";
+    }
+    34%,66%{
+        content: "Fronted Designer";
+    }
+    67%,100%{
+        content: "WordPress Designer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contact-content h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .practice .nav-tabs{
+        gap: 0px;
+    }
+    .slider-content .animated-text{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .slider-content .animated-text{
+        font-size: 20px;
+    }
+
+    .slider-paragraph p{
+        font-size: 16px;
+        color: var(--white);
+    }
+}
