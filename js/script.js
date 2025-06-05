@@ -7,5 +7,5 @@ function sendMail() {
         phone_no : document.getElementById('phoneNo').value,
     }
 
-    emailjs.send("service_6dkzrvf", "template_6oftgya", params).then(alert("Email Send Successfully!"))
+    emailjs.send("service_od7cqrq", "template_6oftgya", params).then(alert("Email Send Successfully!"))
 }
